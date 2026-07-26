@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 DATA_FILE = "data/opportunities.json"
-OUT_FILE = "dashboard/index.html"
+OUT_FILE = "docs/index.html"
 
 
 def load_data():
@@ -159,7 +159,7 @@ def build():
 </body>
 </html>"""
 
-    os.makedirs("dashboard", exist_ok=True)
+    os.makedirs("docs", exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"Dashboard built → {OUT_FILE} ({len(opps)} opportunities)")
