@@ -1,0 +1,2 @@
+tavily-python==0.5.0
+twilio==9.3.4
